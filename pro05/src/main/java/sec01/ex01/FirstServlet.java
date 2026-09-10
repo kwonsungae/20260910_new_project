@@ -14,6 +14,7 @@ public class FirstServlet extends HttpServlet{
 	public void destroy() {
 		// TODO Auto-generated method stub
 		System.out.println("destory() 호출됩니다. 1회만 실행됩니다.");
+		
 	}
 	
 	
