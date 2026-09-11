@@ -2,7 +2,7 @@ package sec01.ex01;
 
 import java.io.IOException;
 import java.io.PrintWriter;
-
+//야르 ㅎㅎ
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -62,3 +62,11 @@ public class FirstServlet extends HttpServlet{
 	
 	
 }
+
+
+// 야르 ㅎㅎ
+
+
+
+
+
