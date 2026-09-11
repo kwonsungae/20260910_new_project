@@ -1,6 +1,7 @@
 package sec01.ex01;
 //지현
 //수환병합연습
+//지현 수정 완료
 import java.io.IOException;
 import javax.servlet.ServletConfig;
 import javax.servlet.ServletException;
