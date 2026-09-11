@@ -1,5 +1,7 @@
 package sec01.ex01;
-//충돌연습 
+
+//지현//충돌연습 
+
 import java.io.IOException;
 import java.io.PrintWriter;
 //야르 ㅎㅎ
@@ -14,7 +16,7 @@ public class FirstServlet extends HttpServlet{
 	public void destroy() {
 		// TODO Auto-generated method stub
 		System.out.println("destory() 호출됩니다. 1회만 실행됩니다.");
-		
+		System.out.println("destory() 호출됩니다. 1회만 실행됩니다."); //지현 했음
 	}
 	
 	

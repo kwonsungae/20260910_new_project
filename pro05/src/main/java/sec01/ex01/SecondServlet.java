@@ -1,5 +1,5 @@
 package sec01.ex01;
-// 병합연습 
+//지현병합연습 
 import java.io.IOException;
 
 import javax.servlet.ServletConfig;
