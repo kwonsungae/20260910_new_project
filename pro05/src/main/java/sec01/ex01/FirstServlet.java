@@ -1,5 +1,5 @@
 package sec01.ex01;
-
+//충돌연습 
 import java.io.IOException;
 import java.io.PrintWriter;
 //야르 ㅎㅎ
