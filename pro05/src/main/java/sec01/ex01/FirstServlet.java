@@ -1,5 +1,7 @@
 package sec01.ex01;
-//지현
+
+//지현//충돌연습 
+
 import java.io.IOException;
 import java.io.PrintWriter;
 //야르 ㅎㅎ
