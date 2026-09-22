@@ -1,0 +1,51 @@
+`Permission to kwonsungae/CarProject.git denied to rnjstjddo` 에러는 이클립스나 윈도우 자격 증명에 **이전 계정(`rnjstjddo`)의 인증 정보가 저장**되어 있어서 발생하는 권한 에러입니다.
+
+새로운 GitHub 계정(`kwonsungae` 등)으로 전환하기 위해 **윈도우 자격 증명 수정**과 **이클립스 Git 계정 재설정**을 순서대로 진행해 주세요.
+
+---
+
+### 1단계: Windows 자격 증명(Credentials) 삭제 (가장 중요 ⭐️)
+
+윈도우 시스템 자체에 이전 깃허브 계정의 비밀번호/토큰이 저장되어 있어서 발생하는 경우가 대부분입니다.
+
+1. 윈도우 검색창에 **`자격 증명 관리자`** 검색 후 실행
+2. **`Windows 자격 증명`** 클릭
+3. **일반 자격 증명** 목록에서 `git:[https://github.com](https://github.com)` 관련 항목을 찾습니다.
+4. 해당 항목을 클릭하여 [제거]를 누릅니다.
+
+---
+
+### 2단계: 이클립스 저장된 인증 정보 제거
+
+이클립스 자체에 캐시된 이전 사용자 자격 증명을 삭제합니다.
+
+1. 이클립스 상단 메뉴: **Window** → **Preferences**
+2. 왼쪽 검색창에 **`Secure Storage`** 검색 (위치: *General → Security → Secure Storage*)
+3. **Contents** 탭 클릭
+4. **`[Default Secure Storage]`** 항목을 펼쳐서 **`GIT`** 관련 폴더가 있다면 클릭 후 **[Delete]** 버튼으로 삭제
+5. **Apply and Close** 클릭 후 **이클립스를 재시작**합니다.
+
+---
+
+### 3단계: Git 사용자 이름 & 이메일 변경
+
+터미널(또는 이클립스 내 Git Bash)에서 현재 프로젝트에 적용될 사용자 정보를 변경합니다.
+
+```bash
+# 글로벌 사용자 설정 변경
+git config --global user.name "kwonsungae"
+git config --global user.email "본인_깃허브_이메일@example.com"
+
+```
+
+> **이클립스 GUI로 변경하는 방법:**
+> **Window** → **Preferences** → **Team** → **Git** → **Configuration** 탭에서 `user.name`과 `user.email`을 변경하고 **Apply**를 누릅니다.
+
+---
+
+### 4단계: 다시 Push 진행 (새 토큰/로그인 입력)
+
+위 설정을 마친 후 이클립스에서 다시 **Push**를 시도하면, 로그인 창(또는 GitHub 로그인 인증 팝업)이 새로 뜨게 됩니다.
+
+1. 로그인 창이 뜨면 **새로운 GitHub 계정**으로 로그인합니다.
+2. 비밀번호 입력 창에 일반 비밀번호 대신 Personal Access Token (PAT)을 입력해야 정상 로그인되는 경우도 있으니 참고해 주세요.
